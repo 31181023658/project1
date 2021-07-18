@@ -1,0 +1,165 @@
+header{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    padding: 0;
+    height: 150vh;
+    
+}
+.slider{
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: -80px;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 400px;
+   
+}
+
+.slides input{
+    display: none;
+    background: black;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 1000px;
+    height: 400px;
+    padding-top: 2px;
+}
+
+.navigation-manual{
+position: absolute;
+width: 1000px;
+margin-top: -40px;
+display: flex;
+justify-content: center;
+
+}
+
+.manual-btn{
+border: 2px solid red;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+    
+}
+
+.manual-btn:hover{
+    background: yellow;
+}
+
+#radio1:checked ~ .fist{
+    margin-left: 0;
+}
+#radio2:checked ~ .fist{
+    margin-left: -20%;
+}
+#radio3:checked ~ .fist{
+    margin-left: -40%;
+}
+#radio4:checked ~ .fist{
+    margin-left: -60%;
+}
+
+
+.navigation-auto{
+    position:absolute;
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    margin-top: 360px;
+
+}
+
+.navigation-auto div{
+    border: 2px solid #444;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: gray;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: gray;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: gray;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: gray;
+}
+
+
+.left-right-section{
+    display: flex;
+    margin-top: 10px;
+}
+
+.left-right-section .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+   
+}
+
+
+.left-right-section .image{
+    width: 50%;
+    display: flex;
+}
+
+.left-right-section .image img{
+    width: 100%;
+    
+}
+
+.text h1 {
+    margin-bottom: 24px ;
+    margin: 2px;
+    font-size: bold;
+}
+
+
+.text .buy{
+    padding: 7px 32px;
+    border: 1px solid;
+    border-radius: 50%;
+    color: #1e3932;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+ 
+}
+
+.text .buy:hover{
+    padding: 7px 30px;
+    background-color: beige;
+}
+
+
